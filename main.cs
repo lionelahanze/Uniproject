@@ -13,7 +13,7 @@
             paramReader?.Invoke(cmd, Parameters);
             return cmd;
         }
-
+//need the rest
   internal sealed class DataTableHandler : SqlMapper.ITypeHandler
     {
         public object Parse(Type destinationType, object value)
