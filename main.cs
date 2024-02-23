@@ -27,3 +27,9 @@
         }
     }
 }
+ public void AddParameter(IDbCommand command, string name)
+        {
+            if (IsFixedLength && Length == -1)
+            {
+                throw new InvalidOperationException("If specifying IsFixedLength,  a Length must also be specified");
+            }
